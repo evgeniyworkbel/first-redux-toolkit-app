@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 // Импортируем нужные действия
 import { increment, decrement, incrementByAmount } from '../slices/counterSlice.js';
 
+/* eslint-disable import/no-anonymous-default-export */
 export default () => {
   // Вытаскиваем данные из хранилища. state – все состояние
   const count = useSelector((state) => state.counter.value);
